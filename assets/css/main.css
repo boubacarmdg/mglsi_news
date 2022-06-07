@@ -1,0 +1,121 @@
+@font-face {font-family: "Touche"; src: url("//db.onlinewebfonts.com/t/89d8fba73b6d10c300478fad02d4871d.eot"); src: url("//db.onlinewebfonts.com/t/89d8fba73b6d10c300478fad02d4871d.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/89d8fba73b6d10c300478fad02d4871d.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/89d8fba73b6d10c300478fad02d4871d.woff") format("woff"), url("//db.onlinewebfonts.com/t/89d8fba73b6d10c300478fad02d4871d.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/89d8fba73b6d10c300478fad02d4871d.svg#Touche") format("svg"); }
+body{
+    background:#f6f5fc;
+    font-family: "Touche";
+}
+#sidebar{
+    width: 22rem;
+    background:white;
+    height: 100vh;
+    position:absolute;
+    top: 0;
+    left: 0;
+
+}
+#sidebar #side-container{
+    min-width:10rem;
+    padding-top:2rem;
+    padding-left:2rem;
+}
+
+#sidebar #side-container #title{
+    font-size:18px;
+    font-weight: 600;
+    color:#008080;
+}
+#side-container ul.category{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 4rem;
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+
+}
+#side-container ul.category li{
+    color:#9e9ea7;
+    cursor: pointer;
+    transition: all .2s ease-in-out;
+    font-weight:600;
+    font-size:14px;
+}
+#side-container ul.category li:hover{
+    color: #008080;
+    transition: all .2s ease-in-out;
+}
+#side-container ul.a{
+    text-decoration: none;
+}
+
+main {
+    margin-left:23rem;
+    padding-top:2rem;
+}
+main #title{
+    font-size:16px;
+    font-weight: 700;
+    color:#008080;
+    margin-bottom:1rem;
+}
+main #articles-container{
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+    padding-right:1rem;
+}
+main #articles-container .article{
+    background:white;
+    padding:1rem;
+    border-radius:.5rem;
+    cursor:pointer;
+    transition:all .1s ease-in-out;
+
+}
+main #articles-container .article:hover{
+    border:2px solid #008080;
+    transform: scale(1.01);
+}
+main #articles-container .article .title{
+    font-size:18px;
+    font-weight: 600;
+    color:#424242;
+    margin-bottom:1rem;
+}
+main #articles-container .article .content{
+    font-size:14px;
+    font-weight: 500;
+    color:#5e608a;
+    margin-bottom:1rem;
+}
+.no-art{
+    font-size:13px;
+    font-weight: 500;
+}
+.catego{
+    color:#008080;
+}
+
+#view-article{
+
+}
+#view-article .content{
+    font-size:14px;
+    font-weight: 500;
+    color:#5e608b;
+    margin-bottom:1rem;
+}
+#returnlink{
+    color:#5A5C5C;
+    text-decoration: none;
+    font-size:13px;
+    font-weight:bold;
+    transition: all .2s ease-in-out;
+    margin-top:3rem;
+}
+
+#returnlink:hover{
+    color:#008080;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+}
